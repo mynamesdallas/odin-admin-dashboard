@@ -9,7 +9,7 @@
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr 6fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar content";
@@ -20,8 +20,20 @@
 }
 
 .sidebar {
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
     grid-area: sidebar;
     background-color: #1992d4;
+    padding: 16px 19px;
+}
+
+.sidebar .logo {
+    display: flex;
+}
+
+.sidebar .logo img {
+    width: 40px;
+    height: 35px;
 }
 
 .content {
