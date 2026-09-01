@@ -21,74 +21,46 @@ html {
 
 .header {
     grid-area: header;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "top"
-        "bottom";
-}
-
-.header-top {
-    grid-area: top;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-        "search profile";
 }
 
 .header-top .search {
     grid-area: search;
 }
 
-.header-top .profile {
-    grid-area: profile;
-}
-
-.header-bottom {
-    grid-area: bottom;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "welcome buttons";
-}
-
-.header-bottom .welcome {
-    grid-area: welcome;
-    display: flex;
-}
-
-.header-bottom .buttons {
-    grid-area: buttons;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .sidebar {
-    display: grid;
-    grid-template-rows: 1fr 2fr 3fr;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
     grid-area: sidebar;
     background-color: #1992d4;
-    padding: 16px 19px;
-    gap: 2rem;
+    color: white;
 }
 
 .sidebar .logo {
     display: flex;
-    color: white;
+    align-items: start;
+    margin-bottom: 4rem;
 }
 
-.sidebar .logo img {
-    width: 40px;
-    height: 35px;
+.sidebar .nav {
+    margin-bottom: 4rem;
 }
 
 .sidebar ul,
-.sidebar ul a {
+.sidebar a {
     text-decoration: none;
     list-style: none;
-    font-size: 1.5rem;
-    margin-bottom: 1.2rem;
     color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.sidebar li {
+    line-height: 2.5rem;
+}
+
+.sidebar li img {
+    margin-right: 1.2rem;
 }
 
 .content {
