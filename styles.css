@@ -21,6 +21,46 @@ html {
 
 .header {
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "top"
+        "bottom";
+}
+
+.header-top {
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "search profile";
+}
+
+.header-top .search {
+    grid-area: search;
+}
+
+.header-top .profile {
+    grid-area: profile;
+}
+
+.header-bottom {
+    grid-area: bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "welcome buttons";
+}
+
+.header-bottom .welcome {
+    grid-area: welcome;
+    display: flex;
+}
+
+.header-bottom .buttons {
+    grid-area: buttons;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .sidebar {
