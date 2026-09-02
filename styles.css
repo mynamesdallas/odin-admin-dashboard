@@ -152,6 +152,7 @@ html {
 
 .content .projects {
     grid-area: projects;
+    padding: 1rem 4rem;
 }
 
 .project-container {
@@ -159,6 +160,13 @@ html {
     gap: 1rem;
     place-items: center;
     grid-template-columns: 1fr 1fr;
+}
+
+.projects > p,
+.announcements > p,
+.trending > p {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .project-container .card {
@@ -172,8 +180,12 @@ html {
 
 .content .announcements {
     grid-area: announcements;
+    padding-top: 1.5rem;
+    padding-right: 4rem;
 }
 
 .content .trending {
     grid-area: trending;
+    padding-top: 1.8rem;
+    padding-right: 4rem;
 }
