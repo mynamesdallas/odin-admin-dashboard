@@ -152,7 +152,7 @@ html {
 
 .content .projects {
     grid-area: projects;
-    padding: 1rem 4rem;
+    padding: 1.5rem 4rem;
 }
 
 .project-container {
@@ -166,15 +166,15 @@ html {
 .announcements > p,
 .trending > p {
     font-size: 1.5rem;
+    padding-bottom: 1.2rem;
     font-weight: bold;
 }
 
 .project-container .card {
-    height: 175px;
-    width: 350px;
+    height: 200px;
     background-color: white;
     border-left: 6px solid gold;
-    border-radius: 7px;
+    border-radius: 10px;
     padding: 1rem 1.8rem;
 }
 
@@ -188,4 +188,14 @@ html {
     grid-area: trending;
     padding-top: 1.8rem;
     padding-right: 4rem;
+}
+
+.announce-container {
+    background-color: white;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+}
+
+.announce-container hr {
+    margin: 1rem 0;
 }
