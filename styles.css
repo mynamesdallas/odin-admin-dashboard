@@ -10,7 +10,7 @@ html {
 
 .container {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 6fr;
