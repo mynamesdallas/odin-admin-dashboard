@@ -142,4 +142,24 @@ html {
 .content {
     grid-area: content;
     background-color: lightgray;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+}
+
+.content .projects {
+    grid-area: projects;
+    border: 1px solid;
+}
+
+.content .announcements {
+    grid-area: announcements;
+    border: 1px solid;
+}
+
+.content .trending {
+    grid-area: trending;
 }
