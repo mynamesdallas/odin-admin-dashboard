@@ -152,12 +152,26 @@ html {
 
 .content .projects {
     grid-area: projects;
-    border: 1px solid;
+}
+
+.project-container {
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-container .card {
+    height: 175px;
+    width: 350px;
+    background-color: white;
+    border-left: 6px solid gold;
+    border-radius: 7px;
+    padding: 1rem 1.8rem;
 }
 
 .content .announcements {
     grid-area: announcements;
-    border: 1px solid;
 }
 
 .content .trending {
