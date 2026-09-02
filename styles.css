@@ -21,6 +21,8 @@ html {
 
 .header {
     grid-area: header;
+    padding: 15px 35px;
+    height: 160px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -31,6 +33,7 @@ html {
 .header-top {
     grid-area: header-top;
     display: grid;
+    align-items: baseline;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 
         "search profile";
@@ -40,13 +43,28 @@ html {
     grid-area: search;
 }
 
+.header-top input {
+    width: 75%;
+    padding: 5px;
+    border-radius: 12px;
+    border: none;
+    background-color: lightgrey;
+}
+
 .header-top .profile {
     grid-area: profile;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem;
+    gap: 1rem;
+    font-weight: bold;
 }
 
 .header-bottom {
     grid-area: header-bottom;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "welcome buttons";
@@ -54,10 +72,23 @@ html {
 
 .header-bottom .welcome {
     grid-area: welcome;
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom .greeting {
+    margin-left: 8px;
+    font-weight: 600;
+}
+
+.greeting .name {
+    font-size: 1.6rem;
 }
 
 .header-bottom .buttons {
     grid-area: buttons;
+    place-self: end;
+    align-self: center;
 }
 
 .header-bottom button {
@@ -69,6 +100,7 @@ html {
     background-color: #1992d4;
     color: white;
     margin: 0 15px;
+    cursor: pointer;
 }
 
 .sidebar {
