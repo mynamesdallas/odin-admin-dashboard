@@ -184,13 +184,8 @@ html {
     padding-right: 4rem;
 }
 
-.content .trending {
-    grid-area: trending;
-    padding-top: 1.8rem;
-    padding-right: 4rem;
-}
-
-.announce-container {
+.announce-container,
+.trending-container {
     background-color: white;
     padding: 1.5rem 1rem;
     border-radius: 10px;
@@ -198,4 +193,20 @@ html {
 
 .announce-container hr {
     margin: 1rem 0;
+}
+
+.content .trending {
+    grid-area: trending;
+    padding-top: 1.8rem;
+    padding-right: 4rem;
+}
+
+.trend {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.trend .user-tag {
+    font-weight: bold;
 }
